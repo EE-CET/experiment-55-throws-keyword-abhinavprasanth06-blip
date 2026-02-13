@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Exception Case (Negative Input)",
+      "setup": "javac src/ThrowsDemo.java",
+      "run": "java -cp src ThrowsDemo",
+      "input": "-5",
+      "output": "Caught: IO Exception",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "Valid Case (Positive Input)",
+      "setup": "javac src/ThrowsDemo.java",
+      "run": "java -cp src ThrowsDemo",
+      "input": "10",
+      "output": "10",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    }
+  ]
+}
